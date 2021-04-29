@@ -1,0 +1,14 @@
+
+<div class="add">
+    <h2 class="heading">Add two numbers or string</h2>
+    <form  #addForm="ngForm" (ngSubmit)="onSubmit(addForm)">
+        <label for="a">a </label>
+        <input type="text"  #a placeholder="Enter First number" name="a" ngModel>
+        <br><br>
+        <label for="b" >b </label>
+        <input type="text" #b placeholder="Enter second number" name="b" ngModel>
+        <br>
+        <button class="addBtn" type="submit">Add</button>
+        <h3 *ngIf="addData">Result: {{addData.result}}</h3>
+    </form>
+</div>
