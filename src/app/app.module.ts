@@ -8,12 +8,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { TestConnectionComponent } from './test-connection/test-connection.component';
 import { DelphiService } from './delphi.service';
 import { AddJsonComponent } from './add-json/add-json.component';
+import { AddComponent } from './add/add.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestConnectionComponent,
-    AddJsonComponent
+    AddJsonComponent,
+    AddComponent
   ],
   imports: [
     BrowserModule,

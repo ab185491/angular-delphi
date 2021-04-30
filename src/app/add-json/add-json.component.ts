@@ -26,7 +26,7 @@ export class AddJsonComponent implements OnInit {
     this._delphiService.addJson(body)
                   .subscribe(data => {
                     this.addData = data
-                    // console.log(data);
+                    console.log(data);
                     
                   });
         
